@@ -9,10 +9,48 @@
 	<style>
 		
 		h1 {
+			z-index: 2;
 			text-align: center;
 			border: groove;
 			padding: 10px
 		}
+
+		body {
+
+			background-color: rgb(84, 45, 255);
+		}
+
+		p {
+			text-align: center;
+
+		}
+
+
+		.calendar{
+			margin-top: 100px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			bottom: 0px;
+			right: 0px;
+
+		}
+
+    	iframe {
+    		position:absolute;
+    		/*z-index: 1;*/
+    		width: 100%;
+    		height: 100%;
+    		/*margin-top: 100px;
+    		top: 0px;
+    		left: 0px;
+    		bottom: 0px;
+    		right: 0px;*/
+		}
+
+
+
+
 
 	</style>
 
@@ -23,7 +61,20 @@
 	<h1>Joshua Media Ministries Media Team</h1>
 
 
+	<p>
+
+		<div class = "calendar">
+
+			<iframe src="https://calendar.google.com/calendar/embed?src=c59r92u2vnbiks81mr3foh0c74%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" frameborder="0" scrolling="no"></iframe>
+
+		</div>
+
+	</p>
+
+
 	<script lang="javascript" src="dist/xlsx.full.min.js"></script>
+
+
 
 	<script>
 		
